@@ -1,7 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import axios from '../../utils/axios';
 import { NavLink } from 'react-router-dom';
 import "remixicon/fonts/remixicon.css";
 const Sidenav = () => {
+
+  
   return (
     <div className="w-[20%] h-screen bg-zinc-800 border-r-2 border-zinc-600 p-5  flex flex-col overflow-hidden ">
       <h1 className="text-2xl ">
@@ -17,7 +20,7 @@ const Sidenav = () => {
         <NavLink to="/popular" className="hover:bg-[#6556CD] hover:text-white p-5 text-zinc-300 rounded-md duration-200">
           <i className="ri-bard-line mr-1"></i>Popular
         </NavLink>
-        <NavLink to="/movies" className="hover:bg-[#6556CD] hover:text-white p-5 text-zinc-300 rounded-md duration-200">
+        <NavLink to="/movie" className="hover:bg-[#6556CD] hover:text-white p-5 text-zinc-300 rounded-md duration-200">
           <i className="ri-movie-2-line mr-2"></i>Movies
         </NavLink>
         <NavLink to="/tv" className="hover:bg-[#6556CD] hover:text-white p-5 text-zinc-300 rounded-md duration-200">
