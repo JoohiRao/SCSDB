@@ -11,6 +11,8 @@ const Dropdown = ({title,options,func}) => {
           <option value={o} key={i}>
             {o.toUpperCase()}
           </option>
+
+          // This line dynamically maps through each item in the options array and generates an <option> element for it.
         ))}
       </select>
     </div>

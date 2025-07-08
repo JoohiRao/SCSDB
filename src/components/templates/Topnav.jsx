@@ -19,6 +19,8 @@ const Topnav = () => {
         }
     };
 
+
+    //call whenever query changes
     useEffect(() => {
         getSearches();
     }, [query]);
